@@ -139,7 +139,6 @@ void loop()
   int temp_int = (int)tmp_116;
   int temp_frac = (int)((tmp_116 - temp_int) * 100);  // 2 decimal places
 
-  // Handle negative fractional part if tmp_116 is negative
   sprintf(buf, "Temp: %d.%02d C", temp_int, temp_frac);
   // sprintf(buf, "Hello World from Bishesh! QoS 0 message");
   Serial.println(buf);
